@@ -63,7 +63,7 @@ public enum ServerCapabilitiesTextDocumentSync: Codable {
 
 public struct CompletionOptions: Codable {
     public let resolveProvider: Bool?
-    public let triggerCharacters: [String]
+    public let triggerCharacters: [String]?
 }
 
 public struct SignatureHelpOptions: Codable {
