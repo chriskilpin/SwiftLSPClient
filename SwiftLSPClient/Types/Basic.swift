@@ -57,6 +57,7 @@ public enum LanguageIdentifier: String, Codable, CaseIterable {
     case cpp = "cpp"
     case objc = "objective-c"
     case objcpp = "objective-cpp"
+    case graphql = "graphql"
 
     static let fileExtensions = [
         "go": .go,
@@ -70,6 +71,7 @@ public enum LanguageIdentifier: String, Codable, CaseIterable {
         "mm": .objcpp,
         "h": .objcpp,
         "hpp": .objcpp,
+        "graphql": .graphql
     ]
 
     public enum LanguageServerParameterError: Error {
